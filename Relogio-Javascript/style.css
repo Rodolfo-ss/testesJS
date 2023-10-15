@@ -1,0 +1,22 @@
+body {
+    background-color: grey;
+
+}
+
+.myClock {
+    font-size: 100px;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    margin: 200px;
+    padding: 10px;
+  
+
+}
+
+.myClock span {
+    padding: 20px;
+    background: red;
+    border-radius: 10px;
+}

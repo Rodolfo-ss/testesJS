@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM e onclick no javascript</title>
+
+    <script>
+
+        function loaded(){
+            let t = document.getElementById("titulo")
+            t.onclick = MudarText;
+
+            t.addEventListener("click", MudarText)   
+    
+        
+        }
+
+        function mouseFora (){
+            this.innerHTML = "Mouse fora texto volta"
+        }
+
+    function MudarText(){
+        this.innerHTML = "Novo Texto";
+    }
+        function caConteudo(){
+            document.getElementById("text").innerHTML = "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta impedit temporibus rem reiciendis reprehenderit sapiente ipsam incidunt eum illum cupiditate enim suscipit molestias aliquid debitis, est, hic ea repellendus quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, cupiditate perferendis laboriosam soluta saepe ex ipsa quae, molestiae doloremque quibusdam rem. Tenetur ducimus molestias aliquid numquam debitis expedita esse distinctio.</p>"
+        }
+    </script>
+
+
+</head>
+<body onload="loaded()">
+    
+
+    <button  onclick="caConteudo()" >Botão </button>
+    <p id="text"></p>
+
+    <h1 id="titulo">teste</h1>
+
+
+
+</body>
+</html>
